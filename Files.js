@@ -141,7 +141,7 @@ export default class Files {
       if( resource ) {
          config.body = JSON.stringify(resource);
       }
-      return fetch(`${GDrive._urlFiles}/${fileId}${GDrive._stringifyQueryParams(queryParams)}`,config);
+      return fetch(`${uploadUrl}/${fileId}${GDrive._stringifyQueryParams(queryParams)}`,config);
    }
    
    export(fileId, mimeType) {
